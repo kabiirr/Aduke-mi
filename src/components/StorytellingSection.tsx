@@ -23,7 +23,7 @@ interface PhotoCard {
 const floatingPhotos: PhotoCard[] = [
   {
     src: "https://res.cloudinary.com/dwbdylcas/image/upload/f_auto,q_auto/v1781340803/IMG_7013_natvui.jpg",
-    label: "baby.jpeg",
+    label: "shaylaa.jpeg",
     rotation: -8,
     initialX: "-44vw",
     initialY: "-36vh",
@@ -34,7 +34,7 @@ const floatingPhotos: PhotoCard[] = [
   },
   {
     src: "https://res.cloudinary.com/dwbdylcas/image/upload/v1781340804/50230e84-8247-4ee2-ae7f-364c31180642_fjvlug.jpg",
-    label: "baby.jpeg",
+    label: "Ifemii.jpeg",
     rotation: 5,
     initialX: "-14vw",
     initialY: "-42vh",
@@ -45,7 +45,7 @@ const floatingPhotos: PhotoCard[] = [
   },
   {
     src: "https://res.cloudinary.com/dwbdylcas/image/upload/v1781340804/PHOTO-2026-01-30-00-28-37_amdlss.jpg",
-    label: "baby.jpeg",
+    label: "Adukemi.jpeg",
     rotation: -4,
     initialX: "14vw",
     initialY: "-40vh",
@@ -56,7 +56,7 @@ const floatingPhotos: PhotoCard[] = [
   },
   {
     src: "https://res.cloudinary.com/dwbdylcas/image/upload/v1781510615/a42be0cc-2d71-483c-8f4a-bb2548f5f81c_n11yq5.jpg",
-    label: "baby.jpeg",
+    label: "Babymi.jpeg",
     rotation: 10,
     initialX: "40vw",
     initialY: "-36vh",
@@ -67,7 +67,7 @@ const floatingPhotos: PhotoCard[] = [
   },
   {
     src: "https://res.cloudinary.com/dwbdylcas/image/upload/v1781340804/ce3dd336-f520-46c0-a5fe-86eccc86cd79_mbopjv.jpg",
-    label: "baby.jpeg",
+    label: "Boluwasefemi.jpeg",
     rotation: -12,
     initialX: "-48vw",
     initialY: "0vh",
@@ -78,7 +78,7 @@ const floatingPhotos: PhotoCard[] = [
   },
   {
     src: "https://res.cloudinary.com/dwbdylcas/video/upload/v1781510589/613943DB-7777-45D0-9883-756DFA4E6C10_ubcjgb.mov",
-    label: "baby.jpeg",
+    label: "Motunrayo.jpeg",
     rotation: 15,
     initialX: "46vw",
     initialY: "-4vh",
@@ -89,7 +89,7 @@ const floatingPhotos: PhotoCard[] = [
   },
   {
     src: "https://res.cloudinary.com/dwbdylcas/video/upload/v1781340756/WhatsApp_Video_2026-06-03_at_09.03.27_esdoyc.mp4",
-    label: "baby.jpeg",
+    label: "BabyKabiru.jpeg",
     rotation: 6,
     initialX: "-44vw",
     initialY: "32vh",
@@ -100,7 +100,7 @@ const floatingPhotos: PhotoCard[] = [
   },
   {
     src: "https://res.cloudinary.com/dwbdylcas/video/upload/v1781510598/FCA0357E-1F4C-49BD-A8C0-FBA60B89C5B9_jdaujj.mp4",
-    label: "baby.jpeg",
+    label: "Morenikeji.jpeg",
     rotation: -3,
     initialX: "-16vw",
     initialY: "36vh",
@@ -111,7 +111,7 @@ const floatingPhotos: PhotoCard[] = [
   },
   {
     src: "https://res.cloudinary.com/dwbdylcas/video/upload/v1781510564/774cf3a3-91de-4ae6-8d65-4e914e9daa18_ownu0k.mov",
-    label: "baby.jpeg",
+    label: "Ayanfemi.jpeg",
     rotation: 5,
     initialX: "12vw",
     initialY: "34vh",
@@ -122,7 +122,7 @@ const floatingPhotos: PhotoCard[] = [
   },
   {
     src: "https://res.cloudinary.com/dwbdylcas/video/upload/v1781510506/16FCD2E2-3AFA-449A-A549-E19999593BDA_sr6bya.mp4",
-    label: "baby.jpeg",
+    label: "Ifeteminikan.jpeg",
     rotation: -6,
     initialX: "40vw",
     initialY: "30vh",

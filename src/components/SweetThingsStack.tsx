@@ -83,10 +83,10 @@ export default function SweetThingsStack() {
           peeling back the pages
         </span>
         <h2 className="text-4xl md:text-5xl font-serif italic text-charcoal-900 mt-2 mb-4 leading-tight">
-          25 Sweet Things About Azeezah
+          25 Sweet Things About My Babyy girl
         </h2>
         <p className="text-xs sm:text-sm text-zinc-500 font-sans tracking-wide">
-          A collection of small reasons why you are loved, celebrated, and deeply appreciated. Swipe or drag the cards to read them one by one.
+          Mini tiny weeny details about why you're special. Swipe or drag the cards to read them one by one.
         </p>
       </div>
 
@@ -190,7 +190,7 @@ export default function SweetThingsStack() {
                   Every Page Read 🌸
                 </h3>
                 <p className="text-xs sm:text-sm text-zinc-500 font-sans leading-relaxed px-2">
-                  You have read all 25 sweet things. Every word is a reminder of how incredible you are, Azeezah.
+                  You have read all 25 sweet things. Every word is a reminder of how incredible you are, Aduke.
                 </p>
               </div>
 
