@@ -12,6 +12,7 @@ import CelebrationEnding from '@/components/CelebrationEnding';
 export default function Home() {
   const [isUnlocked, setIsUnlocked] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(false);
 
   useEffect(() => {
     setIsMounted(true);
@@ -27,14 +28,24 @@ export default function Home() {
     if (isMounted) {
       if (!isUnlocked) {
         document.body.style.overflow = 'hidden';
-      } else {
+      } else if (!isFlipped) {
         document.body.style.overflow = '';
       }
     }
     return () => {
       document.body.style.overflow = '';
     };
-  }, [isUnlocked, isMounted]);
+  }, [isUnlocked, isFlipped, isMounted]);
+
+  // Scroll to top and lock scroll when flipped
+  useEffect(() => {
+    if (isFlipped) {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }, [isFlipped]);
 
   const handleUnlock = () => {
     setIsUnlocked(true);
@@ -44,7 +55,7 @@ export default function Home() {
   if (!isMounted) return null;
 
   return (
-    <main className="w-full relative min-h-screen">
+    <main className={`w-full relative min-h-screen transition-colors duration-1000 ${isFlipped ? 'bg-zinc-950 text-white' : ''}`}>
       <AnimatePresence mode="wait">
         {!isUnlocked && (
           <DobGate key="dob-gate" onUnlock={handleUnlock} />
@@ -52,14 +63,23 @@ export default function Home() {
       </AnimatePresence>
 
       {isUnlocked && (
-        <SmoothScroll>
-          <div className="relative w-full flex flex-col">
-            <BackgroundMusic />
-            <StorytellingSection />
-            <SweetThingsStack />
-            <CelebrationEnding />
-          </div>
-        </SmoothScroll>
+        <>
+          {isFlipped ? (
+            <div className="relative w-full flex flex-col min-h-screen justify-center items-center overflow-hidden">
+              <BackgroundMusic />
+              <CelebrationEnding isFlipped={isFlipped} setIsFlipped={setIsFlipped} />
+            </div>
+          ) : (
+            <SmoothScroll>
+              <div className="relative w-full flex flex-col">
+                <BackgroundMusic />
+                <StorytellingSection />
+                <SweetThingsStack />
+                <CelebrationEnding isFlipped={isFlipped} setIsFlipped={setIsFlipped} />
+              </div>
+            </SmoothScroll>
+          )}
+        </>
       )}
     </main>
   );

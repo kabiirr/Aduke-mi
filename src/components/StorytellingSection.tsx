@@ -409,7 +409,7 @@ export default function StorytellingSection() {
               Happy birthday
             </h2>
             <h1 className="text-4xl sm:text-6xl md:text-7xl font-sans font-extrabold italic tracking-tight text-charcoal-900 leading-none">
-              my loverr🙈
+              my loverr✨❤️
             </h1>
           </div>
 

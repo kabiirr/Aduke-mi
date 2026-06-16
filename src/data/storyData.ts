@@ -133,5 +133,12 @@ export const galleryPhotos: GalleryPhoto[] = [
     title: "Selfieeee",
     caption: "mirror selfie before we step out",
     aspect: "portrait"
+  },
+  {
+    id: "photo-6",
+    src: "https://res.cloudinary.com/dwbdylcas/video/upload/v1781619128/798DD08E-7D98-40CF-AB46-71BF6BBAA5C2_uwqnra.mov",
+    title: "togetherr 🧸",
+    caption: "my favorite person in the whole world",
+    aspect: "video"
   }
 ];
