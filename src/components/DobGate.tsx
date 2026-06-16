@@ -111,10 +111,10 @@ export default function DobGate({ onUnlock }: DobGateProps) {
 
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold font-sans tracking-tight text-charcoal-900 mb-1">
-            Welcome my shaylaaa
+            Welcome my shaylaaa!
           </h2>
           <p className="text-sm text-zinc-500 font-sans">
-            Unlock website with your date of birth
+            Unlock with your date of birth
           </p>
         </div>
 

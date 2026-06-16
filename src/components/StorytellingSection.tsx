@@ -406,10 +406,10 @@ export default function StorytellingSection() {
         >
           <div className="max-w-lg md:max-w-2xl space-y-4">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-sans italic text-terracotta leading-tight">
-              25 sweet things
+              Happy birthday
             </h2>
             <h1 className="text-4xl sm:text-6xl md:text-7xl font-sans font-extrabold italic tracking-tight text-charcoal-900 leading-none">
-              about birthday girl
+              my loverr🙈
             </h1>
             <p className="text-sm sm:text-base font-sans tracking-wide text-zinc-500 font-medium mt-4">
               In the beginning, there was azeezah
