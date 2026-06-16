@@ -405,7 +405,7 @@ export default function StorytellingSection() {
           className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 z-10 select-text pointer-events-auto"
         >
           <div className="max-w-lg md:max-w-2xl space-y-4">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-sans italic text-terracotta leading-tight">
+            <h2 className="text-4xl sm:text-6xl md:text-7xl font-sans font-extrabold italic tracking-tight text-charcoal-900 leading-none">
               Happy birthday
             </h2>
             <h1 className="text-4xl sm:text-6xl md:text-7xl font-sans font-extrabold italic tracking-tight text-charcoal-900 leading-none">
