@@ -36,8 +36,8 @@ export const storyChapters: StoryChapter[] = [
     id: "mind",
     number: "02",
     title: "A Mind Full of Wonders",
-    date: "Autumn Notes",
-    description: "There's a quiet brilliance in how you look at the world. Whether you're lost in the pages of a vintage book, pondering deep questions, or sharing a thoughtful observation, your intellect and curiosity make every conversation an adventure.",
+    date: "",
+    description: "There's a quiet brilliance in how you look at the world. Whether you're pondering deep questions, or sharing a thoughtful observation, your intellect and curiosity make every with you interesting and worth it",
     image: "/images/portrait-2.png",
     accentColor: "from-emerald-100 to-teal-50"
   },
@@ -45,8 +45,8 @@ export const storyChapters: StoryChapter[] = [
     id: "joy",
     number: "03",
     title: "Infectious Laughter & Joy",
-    date: "Summer 2024",
-    description: "Your laughter is a melody that brightens the darkest days. It's a genuine, soul-stirring joy that radiates outward, reminding everyone that life is beautiful, rich, and meant to be celebrated with open hearts.",
+    date: "",
+    description: "Your laughter is a melody that brightens the darkest days. It's a genuine, soul-stirring(big english hehe) joy that radiates outward, reminding everyone that life is beautiful, rich, and meant to be celebrated with people you love(me and youuu).",
     image: "/images/portrait-3.png",
     accentColor: "from-rose-100 to-peach-50"
   },
@@ -54,17 +54,17 @@ export const storyChapters: StoryChapter[] = [
     id: "shine",
     number: "04",
     title: "Shining Bright in Every Room",
-    date: "City Lights '24",
-    description: "You carry yourself with an elegance that is rare and captivating. You don't just enter a room; you light it up. Your poise, confidence, and warmth leave an indelible mark on everyone you encounter.",
+    date: "",
+    description: "You carry yourself with an elegance that is rare and captivating(as per stargirl nauuu). You don't just enter a room; you light it up(light of the world). Your poise, confidence, and warmth leaves an never easy to forget mark on everyone you encounter(who get mind to forget my baby???).",
     image: "/images/portrait-4.png",
     accentColor: "from-blue-100 to-indigo-50"
   },
   {
     id: "cozy",
     number: "05",
-    title: "The Warmth of Cozy Moments",
-    date: "December 2023",
-    description: "At the end of the day, it's the quiet, cozy moments that mean the most. Sitting by the fire, sharing warm smiles, and enjoying each other's presence. You are my safe harbor and my absolute favorite place to be.",
+    title: "The Warmth of Our Moments",
+    date: "",
+    description: "At the end of the day, it's the quiet, cozy moments that mean the most(we no dey loud our own). Sitting on our bed, sharing warm smiles, and enjoying each other's presence. You are my safe space and my absolute favorite place to be(my home is youuuuu).",
     image: "/images/portrait-5.png",
     accentColor: "from-orange-200 to-terracotta-100"
   }
@@ -131,7 +131,7 @@ export const galleryPhotos: GalleryPhoto[] = [
     id: "photo-5",
     src: "https://res.cloudinary.com/dwbdylcas/image/upload/f_auto,q_auto/v1781510597/IMG_7288_pumnba.jpg",
     title: "Selfieeee",
-    caption: "mirror selfie before we step out hehehe",
+    caption: "mirror selfie before we step out",
     aspect: "portrait"
   }
 ];
