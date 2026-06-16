@@ -1,0 +1,175 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'ABC Diatype';
+  src: url('/fonts/ABCDiatype-Regular-Trial.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ABC Diatype';
+  src: url('/fonts/ABCDiatype-RegularItalic-Trial.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ABC Diatype';
+  src: url('/fonts/ABCDiatype-Medium-Trial.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ABC Diatype';
+  src: url('/fonts/ABCDiatype-MediumItalic-Trial.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ABC Diatype';
+  src: url('/fonts/ABCDiatype-Bold-Trial.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ABC Diatype';
+  src: url('/fonts/ABCDiatype-BoldItalic-Trial.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ABC Diatype';
+  src: url('/fonts/ABCDiatype-Heavy-Trial.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ABC Diatype';
+  src: url('/fonts/ABCDiatype-HeavyItalic-Trial.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@theme {
+  --font-serif: var(--font-serif), Georgia, serif;
+  --font-sans: 'ABC Diatype', system-ui, sans-serif;
+  
+  --color-cream-100: #fdfbf7;
+  --color-cream-200: #f7f4eb;
+  --color-cream-300: #eee9db;
+  --color-charcoal-800: #2a2a2a;
+  --color-charcoal-900: #1a1a1a;
+  --color-terracotta: #e07a5f;
+  --color-warm-orange: #f4a261;
+  --color-warm-yellow: #e9c46a;
+}
+
+:root {
+  --background: #f7f4eb;
+  --foreground: #1a1a1a;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom styles for scrapbook paper, grids, tape, etc. */
+.paper-texture {
+  background-color: #f7f4eb;
+  background-image: 
+    radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 0),
+    radial-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 0);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+.scrapbook-grid {
+  background-size: 30px 30px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.025) 1px, transparent 1px);
+}
+
+.scrapbook-lined {
+  background-size: 100% 2rem;
+  background-image: linear-gradient(to bottom, transparent 95%, rgba(224, 122, 95, 0.08) 95%);
+  line-height: 2rem;
+}
+
+.washi-tape-1 {
+  background: rgba(244, 162, 97, 0.45);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(1px);
+  mask-image: repeating-linear-gradient(45deg, black, black 10px, transparent 10px, transparent 12px);
+}
+
+.washi-tape-2 {
+  background: rgba(224, 122, 95, 0.4);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(1px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f7f4eb;
+}
+::-webkit-scrollbar-thumb {
+  background: #eee9db;
+  border: 2px solid #f7f4eb;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #dcd7c9;
+}
+
+/* Lenis smooth scrolling config */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overflow: clip;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Hide scrollbar when required */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes floatUpAndDown {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+.animate-float-card {
+  animation: floatUpAndDown var(--float-duration, 5s) ease-in-out infinite;
+  animation-delay: var(--float-delay, 0s);
+}
