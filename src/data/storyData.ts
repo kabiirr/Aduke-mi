@@ -11,7 +11,7 @@ export interface StoryChapter {
 export interface SweetThing {
   id: number;
   text: string;
-  category: 'personality' | 'smile' | 'style' | 'moments';
+  category: string;
 }
 
 export interface GalleryPhoto {

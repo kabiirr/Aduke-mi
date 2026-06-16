@@ -411,9 +411,6 @@ export default function StorytellingSection() {
             <h1 className="text-4xl sm:text-6xl md:text-7xl font-sans font-extrabold italic tracking-tight text-charcoal-900 leading-none">
               my loverr🙈
             </h1>
-            <p className="text-sm sm:text-base font-sans tracking-wide text-zinc-500 font-medium mt-4">
-              In the beginning, there was azeezah
-            </p>
           </div>
 
           {/* Scroll Indicator */}
